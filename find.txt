@@ -1,0 +1,27 @@
+//Ëã·¨  find
+
+#include<algorithm>
+#include<list>
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+        int a[10] ={20,700,100,200,203,300,400,500,600,880};
+        cout<<a<<endl;
+        list<int> ilist;
+        for(size_t i = 0;i < 10 ; ++i)
+        {
+                ilist.push_back(a[i]);
+        }
+        ilist.push_back(100);
+        list<int>::iterator iLocation = find(ilist.begin(),ilist.end(),100);
+        if(iLocation != ilist.end())
+        {
+                cout<<"find 100:"<<endl;
+        }
+        cout<<"before is :"<<*(--iLocation) <<endl;
+        return 0;
+}
+~                       
