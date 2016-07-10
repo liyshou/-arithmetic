@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<list>
 #include<iostream>
-
+#include<stdio.h>
 using namespace std;
 
 int main()
